@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1>Management</h1>
+<form method="post">
+    <input type="text"name="task_name"placeholder="Enter task_name">
+    <label for="category">category</label>
+    <select name="category">
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="shopping">Shopping</option>
+    </select>
+    <label for="status">Status</label>
+    <select name="status">
+        <option value="completed">completed</option>
+        <option value="notcompleted">Not completed</option>
+    </select>
+    <button  type="submit">Add Task</button>
+</form>
+{% endblock %}

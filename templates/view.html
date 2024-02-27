@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block content %}
+<table border="1">
+    <tr>
+        <th>first_name</th>
+        <th>task</th>
+        <th>category</th>
+    </tr>
+    <tr>
+        {% for new_admission in new_adfmission %}
+        <td>{{new_admission['first_name']}}</td>
+        <td>{{new_admission['task']}}</td>
+        </tr>{{new_admission['category']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
